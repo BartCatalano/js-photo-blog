@@ -1,5 +1,6 @@
 <!-- nota per tuto/teacher -->
-avendo capito male l'esercizio ho creato un file data.json con l'ausilio di Loris, se la cosa dovesse creare problemi per la lezione due lo cambierò utilizzando il link apposito
+avendo capito male l'esercizio ho creato un file data.json con l'ausilio di Loris, 
+per la lezione due ho comunque svolto utilizzando il link apposito e commentando la parte di riferimento personalizzata.
 
 
 <!-- dividiamo l' esercizio in tre fasi -->
