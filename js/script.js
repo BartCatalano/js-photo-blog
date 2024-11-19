@@ -25,7 +25,8 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>
         
         area.innerHTML += 
             `<div class="col">
-                <div id="img-zone" class="img-area"><img src="${card.Url}" alt="Esempio di immagine"></div>
+            <img class="pin" src="./img/pin.svg" alt="">
+                <div id="img-zone" class="img-area"><img src="${card.url}" alt="" class=""></div>
                 <div id="title-zone" class="text-area">${card.title}</div>
             </div>`;
     });
