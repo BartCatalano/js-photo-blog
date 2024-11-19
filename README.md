@@ -1,3 +1,7 @@
+<!-- nota per tuto/teacher -->
+avendo capito male l'esercizio ho creato un file data.json con l'ausilio di Loris, se la cosa dovesse creare problemi per la lezione due lo cambierò utilizzando il link apposito
+
+
 <!-- dividiamo l' esercizio in tre fasi -->
 **Milestone 1**
 Sfruttando gli screen e gli asset in allegato riproduciamo la grafica proposta in maniera statica:
