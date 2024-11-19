@@ -13,11 +13,6 @@ ul {
     list-style: none;
 }
 
-img {
-    max-width: 100%;
-   
-
-}
 
 /* HEADER */
 
@@ -67,9 +62,8 @@ img {
 
 .col {
     position: relative;
-    width: calc(100% / 3 - 50px);
-    /* width: 250px; */
-    height: 400px;
+    width: calc(100% / 3 - 50px); 
+     height: 350px; 
     margin: 25px;
     background-color: white;
 
@@ -78,15 +72,15 @@ img {
 
 .img-area {
     width: calc(100% - 50px);
-    height: 250px;
+    
     margin: 25px;
 
 }
 
 .text-area {
     width: calc(100% - 50px);
-    height: 80px;
-    margin: 15px 25px;
+    /* height: 80px; */
+    margin:  25px;
     font-family: 'Edu TAS Beginner', sans-serif;
     /* background-color: aquamarine;  */
     text-align: center;
