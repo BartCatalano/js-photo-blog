@@ -1,54 +1,57 @@
 /* reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     max-width: 100%;
 }
 
-ul{
-    list-style:none;
+ul {
+    list-style: none;
 }
-img{
+
+img {
     max-width: 100%;
-    height: 100%;
-    
+   
+
 }
 
 /* HEADER */
 
-.banner{
+.banner {
     background-image: url(./img/wall.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 150px;
 
-    
+
 }
-.titolo{
+
+.titolo {
     color: black;
     text-align: center;
     padding-top: 30px;
     font-size: 70px;
-    font-family:'Sometype Mono', sans-serif;
+    font-family: 'Sometype Mono', sans-serif;
 }
 
 
 /* PARTE CENTRALE */
-.firstbody{
+.firstbody {
 
     background-image: url(./img/cork.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 1200px;
+    background-repeat: repeat;
 }
+
 /* CRTOLINA FOTO */
-.container-foto{
-    
+.container-foto {
+
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
@@ -57,42 +60,79 @@ img{
 
 
 
-.raw{
+.raw {
     display: flex;
     flex-wrap: wrap;
 }
 
-.col{
+.col {
     position: relative;
-    width:calc(100% / 3 - 50px);
+    width: calc(100% / 3 - 50px);
     /* width: 250px; */
     height: 400px;
     margin: 25px;
     background-color: white;
-   
+
 
 }
 
-.img-area{
+.img-area {
     width: calc(100% - 50px);
     height: 250px;
     margin: 25px;
-   
+
 }
 
-.text-area{
+.text-area {
     width: calc(100% - 50px);
     height: 80px;
     margin: 15px 25px;
-    font-family:'Edu TAS Beginner', sans-serif;
+    font-family: 'Edu TAS Beginner', sans-serif;
     /* background-color: aquamarine;  */
     text-align: center;
 }
 
-.pin{
+.pin {
     position: absolute;
     top: 0;
     left: 45%;
     height: 30px;
-    
+
+}
+
+
+
+@media screen and (max-width: 776px) {
+    .col {
+        position: relative;
+        width: calc(100% / 2 - 50px);
+        /* width: 250px; */
+
+    }
+    .titolo {
+        color: black;
+        text-align: center;
+        padding-top: 35px;
+        font-size: 50px;
+        font-family: 'Sometype Mono', sans-serif;
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+    .col {
+        position: relative;
+        width: calc(100% - 50px);
+        /* width: 250px; */
+
+    }
+    .titolo {
+        color: black;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 40px;
+        font-family: 'Sometype Mono', sans-serif;
+    }
+
 }
