@@ -62,22 +62,24 @@ ul{
 }
 
 .col{
-    width: 250px;
+    width:calc(100% / 3 - 50px);
+    /* width: 250px; */
     height: 400px;
+    margin: 25px;
     background-color: white;
-    margin: 50px;
+   
 
 }
 
 .img-area{
-    width: 200px;
+    width: calc(100% - 50px);
     height: 250px;
     margin: 25px;
     background-color: blueviolet;
 }
 
 .text-area{
-    width: 200px;
+    width: calc(100% - 50px);
     height: 80px;
     margin: 15px 25px;
     background-color: aquamarine; 
