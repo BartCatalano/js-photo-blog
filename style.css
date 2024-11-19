@@ -62,22 +62,22 @@ ul{
 }
 
 .col{
-    width: 300px;
+    width: 250px;
     height: 400px;
     background-color: white;
-    margin: 40px;
+    margin: 50px;
 
 }
 
 .img-area{
-    width: 250px;
+    width: 200px;
     height: 250px;
     margin: 25px;
     background-color: blueviolet;
 }
 
 .text-area{
-    width: 250px;
+    width: 200px;
     height: 80px;
     margin: 15px 25px;
     background-color: aquamarine; 
