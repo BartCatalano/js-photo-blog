@@ -21,15 +21,15 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>
     const cards = resp.data;
     // creo un ciclo foreach che itera sull'array ricevuto per prendere i titoli di cui ho bisogno
     cards.forEach(card => {
-        console.log(card.id,resp.data);
-        
+      
         area.innerHTML += 
             `<div class="col">
             <img class="pin" src="./img/pin.svg" alt="">
                 <div id="img-zone" class="img-area"><img src="${card.url}" alt="" class=""></div>
                 <div id="title-zone" class="text-area">${card.title}</div>
-            </div>`;
+            </div>`; 
     });
+    
 });
 
 
@@ -41,6 +41,13 @@ const overlayElem = document.getElementById("overlay");
 btnPopUpClose.addEventListener('click', () => {
     overlayElem.style.display = 'none';
 });
+// creo evento che cliccando su una card apre l'overlay
+area.addEventListener('click', () => {
+    overlayElem.style.display = 'flex';
+});
+
+
+
    
  
 
