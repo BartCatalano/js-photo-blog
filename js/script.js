@@ -32,19 +32,22 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>
     cards.forEach(card => {
       
         area.innerHTML += 
-            `<div class="col" data-post-id="${card.id}">
-            <img class="pin" src="./img/pin.svg" alt="">
-                <div id="img-zone" class="img-area"><img src="${card.url}" alt="" class=""></div>
+            `<div class="col">
+                <img class="pin" src="./img/pin.svg" alt="">
+                <div id="img-zone" class="img-area">
+                    <img src="${card.url}" alt="El Barto" class="">
+                </div>
                 <div id="title-zone" class="text-area">${card.title}</div>
             </div>`; 
     });
     
      
     const cols = document.querySelectorAll(".col");
-    cols.forEach((curcolum) => {
-        curcolum.addEventListener('click', () => {
+    cols.forEach((curCol) => {
+        curCol.addEventListener('click', () => {
             overlayElem.style.display = 'flex';
-            imgInsert.src = curcolum.querySelector(".img-area img").src;  
+            const img = curCol.querySelector(".img-area img");
+            imgInsert.src = img.src;
     });
     });
 
