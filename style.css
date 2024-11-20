@@ -94,8 +94,53 @@ ul {
 
 }
 
+/* SEZIONE OVERLAY MODALE */
+/* STILE OVERLAY */
+.overlay-base {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* display: none; Nascondi di default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+/* IMMAGINE OVERLAY */
+.img-popup{
+    position: relative;
+    display: flex;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+.btn-close-overlay{
+    border: 1px solid black;
+    border-radius: 20%;
+    padding: 4px;
+    position: absolute;
+    background-color: white;
+    top: 2px;
+    left: 4px;
+}
 
 
+
+
+
+
+
+
+
+
+/* MEDIA QUEY */
 @media screen and (max-width: 776px) {
     .col {
         position: relative;
@@ -130,3 +175,4 @@ ul {
     }
 
 }
+

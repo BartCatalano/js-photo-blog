@@ -1,4 +1,4 @@
-<!-- nota per tuto/teacher -->
+<!-- nota per tutor/teacher -->
 avendo capito male l'esercizio ho creato un file data.json con l'ausilio di Loris, 
 per la lezione due ho comunque svolto utilizzando il link apposito e commentando la parte di riferimento personalizzata.
 

@@ -21,7 +21,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>
     const cards = resp.data;
     // creo un ciclo foreach che itera sull'array ricevuto per prendere i titoli di cui ho bisogno
     cards.forEach(card => {
-        console.log(card.url);
+        console.log(card.id,resp.data);
         
         area.innerHTML += 
             `<div class="col">
