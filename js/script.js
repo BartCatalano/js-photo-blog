@@ -29,6 +29,14 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>
                 <div id="title-zone" class="text-area">${card.title}</div>
             </div>`; 
     });
+    const cols = document.querySelectorAll(".col");
+    console.log(cols);
+    
+    cols.forEach(colum => {
+        colum.addEventListener('click', () => {
+            overlayElem.style.display = 'flex';
+        });
+    });
     
 });
 
@@ -42,9 +50,6 @@ btnPopUpClose.addEventListener('click', () => {
     overlayElem.style.display = 'none';
 });
 // creo evento che cliccando su una card apre l'overlay
-area.addEventListener('click', () => {
-    overlayElem.style.display = 'flex';
-});
 
 
 
