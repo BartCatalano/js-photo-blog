@@ -1,7 +1,4 @@
-// prendo gli elementi da html
-const area = document.querySelector(".container-foto");
 
-// USO AXIOS PER PRENDERE IL LINK
 // axios.get("data.json").then((resp) =>{ 
 
 //     const cards = resp.data;
@@ -14,6 +11,14 @@ const area = document.querySelector(".container-foto");
 //             </div>`;
 //     });
 // });
+
+
+
+
+// prendo gli elementi da html
+const area = document.querySelector(".container-foto");
+
+
 
 
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>{ 
@@ -29,15 +34,15 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>
                 <div id="title-zone" class="text-area">${card.title}</div>
             </div>`; 
     });
-    const cols = document.querySelectorAll(".col");
-    console.log(cols);
     
-    cols.forEach(colum => {
+    const cols = document.querySelectorAll(".col");
+    cols.forEach((colum) => {
         colum.addEventListener('click', () => {
             overlayElem.style.display = 'flex';
-        });
+            console.log(colum.dataset);   
     });
-    
+    });
+
 });
 
 
@@ -45,6 +50,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>
 // prendo anche l'overlay per assegnarli l' evento di chiusura
 const btnPopUpClose = document.getElementById("bnt-close-popup");
 const overlayElem = document.getElementById("overlay");
+const imgInsert = document.getElementById("img-insert-popUp");
 
 btnPopUpClose.addEventListener('click', () => {
     overlayElem.style.display = 'none';
