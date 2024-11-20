@@ -31,6 +31,16 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>
             </div>`;
     });
 });
+
+
+// prendo il bottone di chiusura del popup e gli setto il funzionamento
+// prendo anche l'overlay per assegnarli l' evento di chiusura
+const btnPopUpClose = document.getElementById("bnt-close-popup");
+const overlayElem = document.getElementById("overlay");
+
+btnPopUpClose.addEventListener('click', () => {
+    overlayElem.style.display = 'none';
+});
    
  
 
