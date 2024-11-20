@@ -114,10 +114,10 @@ ul {
     position: relative;
     display: flex;
     text-align: center;
-    background: white;
+    /* background: white; */
     padding: 20px;
     border-radius: 10px;
-    height: 200px;
+    height: 400px;
    
 }
 .img-pupUp{
@@ -134,8 +134,8 @@ ul {
     padding: 4px;
     position: absolute;
     background-color: white;
-    top: 2px;
-    left: 4px;
+    top: 0px;
+    left: 10px;
 }
 
 
